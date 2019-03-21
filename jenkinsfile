@@ -30,7 +30,7 @@ pipeline{
                 steps{
                     
                     sshagent(['tomcat2']){
-                        sh 'scp /root/.jenkins/workspace/Pipeline_petclinic_actual/target/*.jar root@18.223.136.48:/opt/apache-tomcat-7.0.93/webapps/'
+                        sh 'scp /root/.jenkins/workspace/Pipeline_petclinic_actual/target/*.jar root@18.188.91.68:/opt/apache-tomcat-7.0.93/webapps/'
                     }
                 } 
                 
